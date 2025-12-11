@@ -1,6 +1,5 @@
 # ☁️ Discord Cloudinary Bot
-
-Discord bot for file upload to Cloudinary. Simple and fast!
+Discord bot for file upload to Cloudinary. Simple and fast!  
 Discord dosya yükleme botu. Basit ve hızlı!
 
 **Made by Bisam ❤️**
@@ -8,7 +7,6 @@ Discord dosya yükleme botu. Basit ve hızlı!
 ---
 
 ## ✨ What it does / Ne yapar
-
 - Upload files to cloud / Dosyaları buluta yükle
 - 30+ image effects / 30+ resim efekti
 - Works on Windows, Termux, VPS
@@ -35,12 +33,23 @@ sudo apt install nodejs
 
 ### 2. Get Bot Token
 
-1. Go to discord.com/developers
+1. Go to [discord.com/developers](https://discord.com/developers/applications)
 2. Create new application
 3. Go to Bot tab
 4. Copy token
 
-### 3. Configure
+### 3. Get Cloudinary Keys / Cloudinary Anahtarları Al
+
+![Cloudinary Setup](https://res.cloudinary.com/dbfpyzokk/image/upload/v1765467664/discord_uploads/Picsart_25-12-11_20-30-47-486_1765467663039.jpg)
+
+1. Go to [Cloudinary Console](https://console.cloudinary.com/app/settings/profile)
+2. Sign up or login / Kaydol veya giriş yap
+3. Copy these values / Bu değerleri kopyala:
+   - **Cloud Name** (örnek: `dbfpyzokk`)
+   - **API Key** (örnek: `123456789012345`)
+   - **API Secret** (örnek: `abcdefghijklmnopqrstuvwxyz`)
+
+### 4. Configure / Ayarla
 
 Edit `.env` file:
 ```env
@@ -50,8 +59,15 @@ API_KEY=your_api_key
 API_SECRET=your_api_secret
 ```
 
-### 4. Run / Çalıştır
+**Example / Örnek:**
+```env
+TOKEN=MTIzNDU2Nzg5MDEyMzQ1Njc4.GaBcDe.FgHiJkLmNoPqRsTuVwXyZ
+CLOUD_NAME=dbfpyzokk
+API_KEY=123456789012345
+API_SECRET=abcdefGHIJKLmnopQRST
+```
 
+### 5. Run / Çalıştır
 ```bash
 npm install
 node bot.js
@@ -120,7 +136,7 @@ bot/
 
 ---
 
-## � License
+## 📜 License
 
 MIT - Free to use / Ücretsiz kullanım
 
